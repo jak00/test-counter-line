@@ -1,0 +1,17 @@
+\documentclass{article}
+%\usepackage{readarray}
+\usepackage{lipsum}
+
+\renewcommand\thepage{\csname arg\roman{page}\endcsname}
+
+\begin{document}
+\readdef{numerki.tex}{\mypagenum}
+\getargsC{\mypagenum}
+
+\section{Test chapter one}
+\lipsum[1-8]
+\section{Test chapter two}
+\lipsum[1-8]
+
+\end{document}
+
